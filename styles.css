@@ -26,10 +26,35 @@ body {
     padding: 10px 0;
   }
   
-  li span {
+  span {
     flex-grow: 1;
   }
   
+  span.due-date {
+    color: #888;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  td {
+    background-color: #fff;
+  }
+  
+
   button {
     background-color: #4caf50;
     color: #fff;

@@ -4,14 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Interactive To-Do List</title>
+  <title>Minimalistic To-Do List</title>
 </head>
 <body>
   <div class="container">
     <h1>To-Do List</h1>
     <input type="text" id="taskInput" placeholder="Add a new task">
+    <input type="date" id = "dueDateInput" placeholder="Pick Due Date">
     <button onclick="addTask()">Add</button>
-    <ul id="taskList"></ul>
+    <table id="taskTable">
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Due Date</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="taskList"></tbody>
+    </table>
+
   </div>
 
   <script src="script.js"></script>
